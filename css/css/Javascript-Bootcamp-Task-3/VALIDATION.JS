@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
     resendBtn.addEventListener('click', function() {
         const msgDiv = document.getElementById('verificationMsg');
         msgDiv.textContent = 'Verification email resent successfully!';
-        msgDiv.style.color =#27ae60';
+        msgDiv.style.color = '#27ae60';
         
         setTimeout(() => {
             msgDiv.textContent = '';

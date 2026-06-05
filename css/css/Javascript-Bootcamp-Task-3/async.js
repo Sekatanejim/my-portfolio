@@ -39,7 +39,7 @@ const studentDatabase = [
         email: "kagiso.mthembu@gamil.com",
         course: "Software Engineering",
         age: 25
-    }
+    }];
 
 function demonstrateSynchronousExecution() {
     const outputDiv = document.getElementById('syncOutput');

@@ -1,466 +1,92 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jim Malapane</title>
     <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Jim Malapane</ti tle>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-          {
-              ;
-            font-family: Arial, sans-serif;
-            line-height: 1.5;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color:#333;
-            color:white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .logo span {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-        }
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        main {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        .contact-info {
-            flex: 1;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .contact-form {
-            flex: 1;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .contact-info h1, .contact-form h2 {
-            color: #333;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #ffaa00;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .info-item {
-            margin: 25px 0;
-        }
-        .info-item h3 {
-            color: #ffaa00;
-            margin-bottom: 8px;
-        }
-        .info-item p, .info-item a {
-            color: #555;
-            text-decoration: none;
-        }
-        .info-item a:hover {
-            color: #ffaa00;
-            text-decoration: underline;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 8px 15px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .social-links a:hover {
-            background-color: #ffaa00;
-            color: #333;
-        }
-        form label {
-            display: block;
-            margin: 15px 0 5px;
-            color: #333;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-family: inherit;
-        }
-        form button {
-            margin-top: 20px;
-            padding: 12px 30px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        form button:hover {
-            background-color: #ffaa00;
-            color: #333;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
-        footer a {
-            color: #ffaa00;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            .contact-container {
-                flex-direction: column;
-            }
-        }
-    </style>
 </head>
 <body>
-
-<header>
-    <div class="logo">
-        <div style="width: 50px; height: 50px; background-color: #ffaa00; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333;">JM</div>
-        <span>Jim Malapane</span>
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact Us</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">JM<span>Portfolio</span></a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
-</header>
 
-<main>
-    <div class="contact-container">
-        <div class="contact-info">
-            <h1>Contact Us</h1>
-            
-            <div class="info-item">
-                <h3>Phone</h3>
-                <p><a href="tel:+270725574414">072 557 4414</a></p>
+    <section class="page-hero">
+        <div class="container">
+            <h1>About Me</h1>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="profile. jpg.jpeg" alt="Jim Malapane">
+                </div>
+                <div class="about-text">
+                    <h2>I'm Jim Malapane, a Data Science Graduate</h2>
+                    <p>I recently graduated with a diploma in Data Science, passionate about turning raw data into actionable insights. My journey in data science began when I realized how data can solve real-world problems and drive business decisions.</p>
+                    
+                    <h3>My Education</h3>
+                    <p> diploma in Data Science<br>Graduated with distinction, focusing on machine learning and statistical analysis.</p>
+                    
+                    <h3>My Skills</h3>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                    
+                    <h3>My Goals</h3>
+                    <p>I aim to become a full-stack data scientist, combining my skills in Python, SQL, and machine learning to create impactful solutions. I'm particularly interested in AI applications in healthcare and finance.</p>
+                    
+                    <a href="contact.html" class="btn">Get In Touch</a>
+                </div>
             </div>
-            
-            <div class="info-item">
-                <h3>✉️ Email</h3>
-                <p><a href="mailto:jimsekatane@gmail.com">jimsekatane@gmail.com</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/jim-malapane-202103121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_a" target="_blank">linkedin.com/in/jim-malapane</a></p>
-            </div>
-            
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/jim-malapane-202103121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_a" target="_blank">LinkedIn Profile</a>
-                <a href="mailto:jimsekatane@gmail.com">Send Email</a>
+                <a href="https://github.com/Sekatanejim/my-portfolio.git" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FdhB9cTqF&urlhash=TBXt&mt=w-u2jCIUK2jbehwNsxWOdH_E1ZL57PrgpFs0-L6G5XFdHb5JYycGvvLdeTaaRyqeR_ZvGwfFljVODrZEKBtRTzkhqEhE7wOkktKjVqxrgXzqPSyn80d8OWk_bA&isSdui=true" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/jimmalapane" target="_blank">Twitter</a>
             </div>
+            <p>Phone: 072 557 4414</p>
+            <p>Email: jimsekatane@gmail.com</p>
+            
         </div>
-        
-        <div class="contact-form">
-            <h2>Send Me a Message</h2>
-            <form action="#" method="post">
-                <label for="name"></label>
-                <input type="text" id="jim" name="jim" required>
-                
-                <label for="jimsekatane@gmail.com"></label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone"></label>
-                <input type="tel" id="phone" name="phone">
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </div>
-</main>
+    </footer>
 
-<footer>
-    <p>Connect with me:</p>
-    <p>
-        <a href="https://www.linkedin.com/in/jim-malapane-202103121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_a" target="_blank">LinkedIn</a>
-        <a href="mailto:jimsekatane@gmail.com">Email</a>
-    </p>
-    <p>Phone: <a href="tel:+270725574414" style="color:#ffaa00;">072 557 4414</a></p>
-    <p>&copy; 2025 Jim Malapane. All rights reserved.</p>
-</footer>
-
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Jim Malapane</ti tle>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color:#333;
-            color:white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .logo span {
-            font-size: 24px;
-            font-weight: bold;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-        }
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        main {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
-        .contact-info {
-            flex: 1;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .contact-form {
-            flex: 1;
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .contact-info h1, .contact-form h2 {
-            color: #333;
-            margin-bottom: 20px;
-            border-bottom: 3px solid #ffaa00;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .info-item {
-            margin: 25px 0;
-        }
-        .info-item h3 {
-            color: #ffaa00;
-            margin-bottom: 8px;
-        }
-        .info-item p, .info-item a {
-            color: #555;
-            text-decoration: none;
-        }
-        .info-item a:hover {
-            color: #ffaa00;
-            text-decoration: underline;
-        }
-        .social-links {
-            margin-top: 20px;
-        }
-        .social-links a {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 8px 15px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .social-links a:hover {
-            background-color: #ffaa00;
-            color: #333;
-        }
-        form label {
-            display: block;
-            margin: 15px 0 5px;
-            color: #333;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-family: inherit;
-        }
-        form button {
-            margin-top: 20px;
-            padding: 12px 30px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        form button:hover {
-            background-color: #ffaa00;
-            color: #333;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-        }
-        footer a {
-            color: #ffaa00;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            .contact-container {
-                flex-direction: column;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <div class="logo">
-        <div style="width: 50px; height: 50px; background-color: #ffaa00; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333;">JM</div>
-        <span>Jim Malapane</span>
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
-
-<main>
-    <div class="contact-container">
-        <div class="contact-info">
-            <h1>Contact Us</h1>
-            
-            <div class="info-item">
-                <h3>Phone</h3>
-                <p><a href="tel:+270725574414">072 557 4414</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h3>✉️ Email</h3>
-                <p><a href="mailto:jimsekatane@gmail.com">jimsekatane@gmail.com</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h3>LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/jim-malapane-202103121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_a" target="_blank">linkedin.com/in/jim-malapane</a></p>
-            </div>
-            
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/jim-malapane-202103121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_a" target="_blank">LinkedIn Profile</a>
-                <a href="mailto:jimsekatane@gmail.com">Send Email</a>
-            </div>
-        </div>
-        
-        <div class="contact-form">
-            <h2>Send Me a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Phone Number (optional)</label>
-                <input type="tel" id="phone" name="phone">
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </div>
-</main>
-
-<footer>
-    <p>Connect with me:</p>
-    <p>
-        <a href="https://www.linkedin.com/in/jim-malapane-202103121?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_a" target="_blank">LinkedIn</a>
-        <a href="mailto:jimsekatane@gmail.com">Email</a>
-    </p>
-    <p>Phone: <a href="tel:+270725574414" style="color:#ffaa00;">072 557 4414</a></p>
-    <p>&copy; 2025 Jim Malapane. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
->>>>>>> 36d17eca8ce4f6bf1bd56257a19decee4fb57c62

@@ -1,15 +1,8 @@
 // Exercise 1: Variable Declaration
+
+
 let name = "jim";
 let age = 34;
 let isStudent = true;
 
-console.log("Name:", name);
-console.log("Age:", age);
-console.log("Is Student:", isStudent);
-
-// Exercise 2: Variable Reassignment
-let favoriteColour = "Blue";
-console.log("Favorite Colour:", favoriteColour);
-
-favoriteColour = "Green";
-console.log("New Favorite Colour:", favoriteColour);
+const leg 
